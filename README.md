@@ -4,9 +4,9 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/hsborges/progweb-template)
 ![GitHub contributors](https://img.shields.io/github/contributors/hsborges/progweb-template)
 
-Nome_da_Aplicação é um/uma ... que permite/tem por objetivo/visa/etc .... 
+Para empresas que possuem diversos setores e protocolos que necessitam de atendimento e abertura de chamados internos para auxiliar seus funcionários o <nome do produto> é um sistema de help-desk que permite a comunicação e resolução de problemas internos por meio de um mensageiro online de modo contrário ao atendimento por telefone que normalmente ocorre nessas empresas, nosso produto permite que as mensagens trocadas sejam protocoladas e armazenadas. Além de garantir melhor usabilidade ao funcionário que pode avaliar e classificar seus problemas dentro de uma plataforma rápida e intuitiva, também proporciona a melhor fluidez e organização da equipe de atendimento para solucionar as demandas requeridas. 
 
-Coloque aqui linhas adicionais com informações sobre o que a aplicação faz. Sua introdução deve ser de no máximo 3 parágrafos, seja simples e objetivo para não sobrecarregar de detalhes desnecessários este espaço. Se necessário, crie novas seções abaixo.
+Acesso o [backlog](https://docs.google.com/spreadsheets/d/1Hta1WhosgH-4h9NC0ErxVpfXV1IxrGRjrFBXKIp29I4/edit?usp=sharing) de desenvolvimento
 
 ## Pré-requisitos
 
