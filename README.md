@@ -7,8 +7,7 @@
 Para empresas que possuem diversos setores e protocolos que necessitam de atendimento e abertura de chamados internos para auxiliar seus funcionários o QHelp é um sistema de help-desk que permite a comunicação e resolução de problemas internos por meio de um mensageiro online de modo contrário ao atendimento por telefone que normalmente ocorre nessas empresas, nosso produto permite que as mensagens trocadas sejam protocoladas e armazenadas. Além de garantir melhor usabilidade ao funcionário que pode avaliar e classificar seus problemas dentro de uma plataforma rápida e intuitiva, também proporciona a melhor fluidez e organização da equipe de atendimento para solucionar as demandas requeridas. 
 
 Acesso o [backlog](https://docs.google.com/spreadsheets/d/1Hta1WhosgH-4h9NC0ErxVpfXV1IxrGRjrFBXKIp29I4/edit?usp=sharing) de desenvolvimento
-
-Acesso ao [mockup](https://drive.google.com/open?id=1lFCS3pv90A8EutHKLf-0MtPKxSbXG0Vo) do desenvolvimento
+Acesso ao [mockup](https://drive.google.com/open?id=11ibLOhiIx5Xgt8adgL6ctP-gD0vVf5Cw) do desenvolvimento
 
 ## Pré-requisitos
 
