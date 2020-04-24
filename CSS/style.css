@@ -1,13 +1,58 @@
 .corpo-cabecalho {
     position: absolute;
     height: 100%;
-    width: 15%;
+    width: 7%;
     background: #2D3CCD;
 }
 
-header h1{
-    max-width: 50px;
-    max-height: 50px;
-    width: auto;
-    height: auto;
+.logo-cabecalho img {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 25%;
+    max-width: 40%;
+}
+
+.lista {
+    margin-top: 150px;
+}
+
+.lista img {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 25%;
+    max-width: 40%;
+}
+
+.barra-superior {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid #D9D9D9;
+}
+
+.menu-superior {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.menu-superior li a {
+    display: block;
+    padding: 10px;
+    background: tomato;
+}
+
+.menu-superior li a img {
+    max-width: 5%;
+}
+
+.caixa {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 50%;
+    border: 2px solid #2D3CCD;
+}
+
+.caixa>div {
+    flex: 1 1 200px;
 }

@@ -18,12 +18,14 @@
     <!-- Barra de navegação -->
     <header>
         <div class="corpo-cabecalho">
-            <h1><img src="Imagens/wink-branco.png"></h1>
-            
+            <a class="logo-cabecalho" href="/"><img src="Imagens/wink-branco.png"></a>
+
             <nav>
-                <ul>
+                <ul class="lista">
                     <li>
-                        <img src="Imagens/settings-branco.png" alt="Informações">
+                        <a href="/">
+                            <img src="Imagens/settings-branco.png" alt="Informações">
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -31,7 +33,43 @@
     </header>
 
     <!-- Conteudo principal -->
-    <main></main>
+    <main>
+        <!-- Informações da parte superior da pagina -->
+        <div class="barra-superior">
+            <h2>Bem-vindo de volta {user}</h2>
+
+            <nav>
+                <ul class="menu-superior">
+                    <li>
+                        <a href="">
+                            <img src="Imagens/notification.png">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Blocos do conteúdo -->
+        <div>
+            <!-- Div para cara bloco criado -->
+            <div class="caixa">
+                <h3>Recursos Humanos</h3>
+                <p>Informações sobre compras e requisições pedidos e libeações de orçamento interno.</p>
+            </div>
+
+            <div class="caixa">
+                <h3>Tecnologia e Suporte</h3>
+                <p>Informações sobre compras e requisições pedidos e liberação de orçamento interno.
+                </p>
+            </div>
+
+            <div class="caixa">
+                <h3>Compras e Requisições</h3>
+                <p>Informações sobre compras e requisições pedidos e liberação de orçamento interno.
+                </p>
+            </div>
+        </div>
+    </main>
 
     <!-- Rodapé -->
     <footer></footer>
