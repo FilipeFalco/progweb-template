@@ -27,15 +27,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 6%;
+    margin-left: 5%;
     border-bottom: 1.9px solid #D9D9D9;
+}
+
+.barra-superior h2 {
+    margin-left: 60px;
 }
 
 .menu-superior {
     display: flex;
     padding-bottom: 10px;
     margin-right: 20%;
-    
     justify-content: space-between;
 }
 
@@ -43,8 +46,6 @@
     display: flex;
     padding: 10px;
     padding-right: 0px;
-    
-   
 }
 
 .menu-superior li a img {
@@ -53,14 +54,12 @@
 }
 
 .caixa {
+    padding: 30px;
     display: inline-flex;
     flex-wrap: wrap;
     width: 50%;
     margin-left: 9%;
     margin-top: 5%;
     border: 2px solid #2D3CCD;
-}
-
-.caixa>div {
-    flex: 1 1 200px;
+    border-radius: 20px;
 }
