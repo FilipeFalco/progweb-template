@@ -1,4 +1,4 @@
-.corpo-cabecalho {
+/**.corpo-cabecalho {
     position: absolute;
     height: 100%;
     width: 5%;
@@ -62,4 +62,52 @@
     margin-top: 5%;
     border: 2px solid #2D3CCD;
     border-radius: 20px;
+}
+
+.estrutura-site {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 20vh 70vh 10vh;
+}
+**/
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: "cabecalho-esquedo cabecalho-superior" "cabecalho-esquedo conteudo" "cabecalho-esquedo conteudo";
+}
+
+#cabecalho-esquedo {
+    background: #2D3CCD;
+    grid-area: cabecalho-esquedo;
+}
+
+.cabecalho-superior {
+    grid-area: cabecalho-superior;
+}
+
+.cabecalho-superior>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1.9px solid #D9D9D9;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.menu-centro {
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: 50px 50px 50px;
+    grid-gap: 5px;
+    justify-content: center;
+    align-content: center;
+}
+
+.menu-centro>div {
+    border: 2px solid #2D3CCD;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-top: 5px;
 }
