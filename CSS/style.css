@@ -1,75 +1,7 @@
-/**.corpo-cabecalho {
-    position: absolute;
-    height: 100%;
-    width: 5%;
-    background: #2D3CCD;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+html {
+    font-family: 'Source Sans Pro', sans-serif;
 }
-
-.logo-cabecalho img {
-    position: relative;
-    margin-top: 20px;
-    margin-left: 25%;
-    max-width: 40%;
-}
-
-.lista {
-    margin-top: 150px;
-}
-
-.lista img {
-    position: relative;
-    margin-top: 20px;
-    margin-left: 25%;
-    max-width: 40%;
-}
-
-.barra-superior {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 5%;
-    border-bottom: 1.9px solid #D9D9D9;
-}
-
-.barra-superior h2 {
-    margin-left: 60px;
-}
-
-.menu-superior {
-    display: flex;
-    padding-bottom: 10px;
-    margin-right: 20%;
-    justify-content: space-between;
-}
-
-.menu-superior li a {
-    display: flex;
-    padding: 10px;
-    padding-right: 0px;
-}
-
-.menu-superior li a img {
-    max-width: 5%;
-    padding-left: 100%;
-}
-
-.caixa {
-    padding: 30px;
-    display: inline-flex;
-    flex-wrap: wrap;
-    width: 50%;
-    margin-left: 9%;
-    margin-top: 5%;
-    border: 2px solid #2D3CCD;
-    border-radius: 20px;
-}
-
-.estrutura-site {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 20vh 70vh 10vh;
-}
-**/
 
 .conteudo {
     display: grid;
@@ -78,10 +10,17 @@
     grid-template-areas: "cabecalho-esquedo cabecalho-superior" "cabecalho-esquedo conteudo" "cabecalho-esquedo conteudo";
 }
 
-#cabecalho-esquedo {
+.cabecalho-esquedo {
     background: #2D3CCD;
     grid-area: cabecalho-esquedo;
 }
+
+.cabecalho-esquedo img {
+    display: flex;
+    max-width: 30%;
+}
+
+.cabecalho-esquedo h1 {}
 
 .cabecalho-superior {
     grid-area: cabecalho-superior;
@@ -96,18 +35,44 @@
     vertical-align: middle;
 }
 
-.menu-centro {
-    display: grid;
-    grid-template-columns: 50%;
-    grid-template-rows: 50px 50px 50px;
-    grid-gap: 5px;
-    justify-content: center;
-    align-content: center;
+.cabecalho-superior h2 {
+    font-weight: bold;
 }
 
-.menu-centro>div {
+.cabecalho-superior img {
+    max-width: 4%;
+}
+
+.menu-centro {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 25% 25% 25%;
+    grid-gap: 20px;
+    justify-content: start;
+    align-content: center;
+    margin: 50px;
+}
+
+.caixa {
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 3.5%;
+    padding-left: 10px;
     border: 2px solid #2D3CCD;
-    border-radius: 20px;
-    padding-left: 15px;
-    padding-top: 5px;
+    border-radius: 30px;
+}
+
+.caixa img {
+    max-width: 5%;
+    float: left;
+}
+
+.caixa h3,
+p {
+    margin-left: 7%;
+}
+
+.caixa h3 {
+    font-weight: bold;
+    margin-bottom: 7px;
 }
