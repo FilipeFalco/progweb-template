@@ -16,8 +16,7 @@ html {
 }
 
 .cabecalho-esquedo img {
-    display: flex;
-    max-width: 30%;
+    width: 80px;
 }
 
 .cabecalho-esquedo h1 {}
