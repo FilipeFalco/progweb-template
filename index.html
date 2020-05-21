@@ -4,69 +4,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>QHelp - Página inicial</title>
 
-    <!-- Códigos CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="app/View/Style/reset.css">
     <link rel="stylesheet" href="app/View/Style/style.css">
 
-    <!-- Códigos JS -->
+    <!-- CSS - Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
-<body>
-    <!-- Grid de conteudo -->
-    <div class="conteudo">
-        <!-- Barra de navegação esquerda -->
-        <header class="cabecalho-esquedo ">
-            <div>
-                <a href="/ "><img src="app/View/Imagens/wink-branco.png" alt=" "></a>
-                <h1>QHelp</h1>
-            </div>
+<body class="has-fixed-sidenav vsc-initialized">
+    <header>
+        <!-- Navbar superior -->
+        <div class="navbar-fixed">
+            <nav class="navbar white">
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo grey-text text-darken-4">Bem-Vindo $user</a>
+                    <ul id="nav-mobile" class="right">
+                        <li class="hide-on-med-and-down">
+                            <a href="#!" data-target="dropdown1" class="dropdown-trigger waves-effect"><i class="material-icons icon-blue">notifications</i></a>
+                        </li>
+                        <li>
+                            <a href="#!" data-target="chat-dropdown" class="dropdown-trigger waves-effect"><i class="material-icons icon-blue">account_circle</i></a>
+                        </li>
+                    </ul>
+                    <!-- Menu para resposividade do sidebar -->
+                    <a href="#!" data-target="sidenav-left" class="sidenav-trigger left"><i class="material-icons black-text">menu</i></a>
+                </div>
+            </nav>
+        </div>
 
-            <div>
-                <nav>
+        <!-- Navbar lateral -->
+        <ul id="sidenav-left" class="sidenav sidenav-fixed blue darken-2 white-text ">
+            <li>
+                <a href="index.html" class="logo-containerwhite"> <img class="logo-corrector" src="app/View/Imagens/wink-branco.png"> <span id="text-logo-color">QHelp</span></a>
+            </li>
 
-                </nav>
-            </div>
-        </header>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li class="bold waves-effect">
+                        <a class="collapsible-header"><i class="large material-icons">dashboard</i>Dashboard</a>
+                    </li>
+                    <li class="bold waves-effect">
+                        <a class="collapsible-header">Chat<i class="large material-icons">chat</i></a>
+                    </li>
+                    <li class="bold waves-effect">
+                        <a class="collapsible-header">Histórico<i class="large material-icons">label</i></a>
+                    </li>
+                    <li class="bold waves-effect">
+                        <a class="collapsible-header">Configurações<i class="large material-icons">settings</i></a>
+                    </li>
+                    <li class="bold waves-effect">
+                        <a class="collapsible-header">Informações<i class="large material-icons">info_outline</i></a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
 
-        <!-- Barra de navegação superior -->
-        <header class="cabecalho-superior ">
-            <div>
-                <h2>Bem vindo de volta {User}</h2>
-                <nav>
-                    <a href="/ "><img src="app/View/Imagens/notification.png "></a>
-                    <a href="/ "><img src="app/View/Imagens/user.png " alt=" "></a>
-                </nav>
-            </div>
-        </header>
-
-        <!-- Conteudo principal -->
-        <main class="menu-centro ">
-            <div class="caixa ">
-                <img src="app/View/Imagens/target.png " alt=" ">
-                <h3>Recursos Humanos</h3>
-                <p>Informações sobre compras e requisições pedidos e libeações de orçamento interno.</p>
-            </div>
-
-            <div class="caixa ">
-                <img src="app/View/Imagens/technical.png">
-                <h3>Tecnologia e Suporte</h3>
-                <p>Informações sobre compras e requisições pedidos e liberação de orçamento interno.
-                </p>
-            </div>
-
-            <div class="caixa ">
-                <img src="app/View/Imagens/payment-terminal.png " alt=" ">
-                <h3>Compras e Requisições</h3>
-                <p>Informações sobre compras e requisições pedidos e liberação de orçamento interno.
-                </p>
+        <main class="container">
+            <div class="masonry row">
+                <div class="col s12 l9 offset-l3">
+                    <div class="card cards-correction">
+                        <img class="image-corrector" src="app/View/Imagens/target.png">
+                        <h5>Recursos Humanos</h5>
+                        <p class="card-text-format">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, facere!</p>
+                    </div>
+                </div>
+                <div class="col s12 l9 offset-l3">
+                    <div class="card cards-correction">
+                        <img class="image-corrector" src="app/View/Imagens/technical.png">
+                        <h5>Departamento de informatica</h5>
+                        <p class="card-text-format">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, atque!</p>
+                    </div>
+                </div>
+                <div class="col s12 l9 offset-l3">
+                    <div class="card cards-correction">
+                        <img class="image-corrector" src="app/View/Imagens/payment-terminal.png">
+                        <h5>Outros</h5>
+                        <p class="card-text-format">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, commodi.</p>
+                    </div>
+                </div>
             </div>
         </main>
 
-        <!-- Rodapé -->
-        <footer></footer>
-    </div>
+    </header>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- JavaScript - Materialize) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>
