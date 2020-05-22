@@ -1,61 +1,25 @@
-# QHelp
+## Laravel PHP Framework
 
-<!--- Exemplos de badges. Acesse https://shields.io para outras opções. Você pode querer incluir informações de dependencias, build, testes, licença, etc. --->
-![GitHub repo size](https://img.shields.io/github/repo-size/hsborges/progweb-template)
-![GitHub contributors](https://img.shields.io/github/contributors/hsborges/progweb-template)
+[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
+[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
+[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
+[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
+[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
 
-Para empresas que possuem diversos setores e protocolos que necessitam de atendimento e abertura de chamados internos para auxiliar seus funcionários o QHelp é um sistema de help-desk que permite a comunicação e resolução de problemas internos por meio de um mensageiro online de modo contrário ao atendimento por telefone que normalmente ocorre nessas empresas, nosso produto permite que as mensagens trocadas sejam protocoladas e armazenadas. Além de garantir melhor usabilidade ao funcionário que pode avaliar e classificar seus problemas dentro de uma plataforma rápida e intuitiva, também proporciona a melhor fluidez e organização da equipe de atendimento para solucionar as demandas requeridas. 
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
 
-Acesso o [backlog](https://docs.google.com/spreadsheets/d/1Hta1WhosgH-4h9NC0ErxVpfXV1IxrGRjrFBXKIp29I4/edit?usp=sharing) de desenvolvimento
+Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.
 
-Acesso ao [mockup](https://drive.google.com/open?id=11ibLOhiIx5Xgt8adgL6ctP-gD0vVf5Cw) do desenvolvimento
+Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
 
-## Pré-requisitos
+## Official Documentation
 
-Antes de iniciar, certifique-se de cumprir os seguintes requisitos:
-<!--- Estes são alguns exemplos de requisitos. Adicione, duplique e remove como necessário --->
-* Você deve possuir a última versão do `<linguagem/dependencia/etc>` instalado.
-* Você deve possuir uma máquina `<Windows/Linux/Mac>`. (Deixe claro qual SO é possível rodar a aplicação, Linux é obrigatório).
-* Você deve ler o `<guia/link/documentação>` dos termos de uso.
-* (outros ...)
+Documentation for the entire framework can be found on the [Laravel website](http://laravel.com/docs).
 
-## Como executar
+### Contributing To Laravel
 
-Para fazer o deploy da aplicação siga os seguintes passos:
+**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
 
-Linux e/ou macOS:
-```
-<commando 1>
-<commando 2>
-....
-<commando n>
-```
+### License
 
-Windows (opcional):
-```
-<commandos>
-```
-
-## Usando Nome_da_Aplicação
-
-Para usar Nome_da_Aplicação, siga os seguintes passos (exemplos):
-
-* Abra o navegador e digite o seguinte endereço: `http://localhost/....`
-* Ao abrir a aplicação você poderá:
-  * Navegar pelo conteúdo público, ou
-  * Entrar com usuário e senha para ....
-* *Continua ...*  
-
-*Descreva as principais atividades, e/ou fluxos, que são possíveis de serem realizadas na aplicação.*
-
-## Contribuidores
-
-As seguintes pessoas contribuiram para este projeto:
-
-* [Camila Martins Garcia](https://github.com/camzgarcia)
-* [Filipe Ferreira Falco](https://github.com/FilipeFalco)
-* [Kleber Meira Lima](https://github.com/KleberMeira)
-
-## Licença de uso
-
-Este projeto usa a seguinte licença: [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.pt-br.html).
+The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
