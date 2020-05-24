@@ -2,13 +2,17 @@ i.icon-blue {
     color: #1976d2;
 }
 
+#espacamento-logo {
+    padding-bottom: 200px;
+}
+
+.logo-corrector {
+    text-align: center;
+}
+
 img.logo-corrector {
-    vertical-align: middle;
-    margin-top: 9px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    margin-left: 20%;
-    max-width: 15%;
+    padding-top: 10px;
+    max-width: 20%;
 }
 
 #text-logo-color {

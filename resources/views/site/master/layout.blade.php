@@ -8,8 +8,8 @@
     <title>QHelp - Página inicial</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="<?php echo asset('css/reset.css')?>" type="text/css">
-    <link rel="stylesheet" href="<?php echo asset('css/style.css')?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo asset('css/reset.css') ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo asset('css/style.css') ?>" type="text/css">
 
     <!-- CSS - Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -42,8 +42,10 @@
 
         <!-- Navbar lateral -->
         <ul id="sidenav-left" class="sidenav sidenav-fixed blue darken-2 white-text ">
-            <li>
-                <a href="index.html" class="logo-containerwhite"> <img class="logo-corrector" src="app/View/Imagens/wink-branco.png"></a>
+            <li >
+                <div class="logo-corrector">
+                    <a href="{{ route('site.home') }}" class="logo-containerwhite"> <img class="logo-corrector" src="{{ asset('images/wink-branco.png') }}"> </a>
+                </div>
             </li>
 
             <li class="no-padding">
