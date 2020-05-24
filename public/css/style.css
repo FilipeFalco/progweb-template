@@ -18,22 +18,17 @@ img.logo-corrector {
     transform: translate(-50%, -50%);
 }
 
-.cards-correction {
-    padding: 5px 10px 10px 10px;
-}
-
-.card-text-format {
-    padding-top: 15px;
-}
-
 img.image-corrector {
-    max-width: 9%;
+    max-width: 80px;
 }
 
 .center-align {
     padding: 30px;
 }
 
+.alinhamento-itens {
+    display: inline-block;
+}
 
 /* Pagina login */
 

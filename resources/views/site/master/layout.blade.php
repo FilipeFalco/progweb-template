@@ -25,30 +25,27 @@
         <div class="navbar-fixed">
             <nav class="navbar white">
                 <div class="nav-wrapper">
-                    <a href="#!" class="brand-logo grey-text text-darken-4">Bem-Vindo $user</a>
-                    
                     <!-- Para abrir menu no mobile -->
                     <a href="#" data-target="mobile-navbar" class="sidenav-trigger"><i class="material-icons icon-blue">menu</i></a>
-                    
+
                     <ul id="nav-mobile" class="right">
                         <li class="hide-on-med-and-down">
-                            <a href="#!" data-target="dropdown1" class="dropdown-trigger waves-effect"><i class="material-icons icon-blue">notifications</i></a>
+                            <a href="#!" class="waves-effect"><i class="material-icons icon-blue">notifications</i></a>
                         </li>
                         <li>
-                            <a href="#!" data-target="dropdown-menu" class="dropdown-trigger waves-effect">
+                            <a href="#" data-target="dropdown-menu" class="dropdown-trigger waves-effect">
                                 <i class="material-icons icon-blue">account_circle</i>
                             </a>
                         </li>
 
-                        <!-- Dropdown navbar -->
-                        <ul id="dropdown-menu" class="dropdown-content">
-                            <li><a href="">Login</a></li>
-                            <li class="divider"></li>
-                        </ul>
 
-                        
                 </div>
             </nav>
+            <!-- Dropdown navbar -->
+            <ul id="dropdown-menu" class="dropdown-content">
+                <li><a href="#">Login</a></li>
+                <li class="divider"></li>
+            </ul>
         </div>
 
         <!-- Navbar lateral -->
