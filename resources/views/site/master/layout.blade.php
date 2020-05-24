@@ -16,6 +16,7 @@
 
     <!-- Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body class="has-fixed-sidenav">
@@ -25,22 +26,33 @@
             <nav class="navbar white">
                 <div class="nav-wrapper">
                     <a href="#!" class="brand-logo grey-text text-darken-4">Bem-Vindo $user</a>
+                    
+                    <!-- Para abrir menu no mobile -->
+                    <a href="#" data-target="mobile-navbar" class="sidenav-trigger"><i class="material-icons icon-blue">menu</i></a>
+                    
                     <ul id="nav-mobile" class="right">
                         <li class="hide-on-med-and-down">
                             <a href="#!" data-target="dropdown1" class="dropdown-trigger waves-effect"><i class="material-icons icon-blue">notifications</i></a>
                         </li>
                         <li>
-                            <a href="#!" data-target="chat-dropdown" class="dropdown-trigger waves-effect"><i class="material-icons icon-blue">account_circle</i></a>
+                            <a href="#!" data-target="dropdown-menu" class="dropdown-trigger waves-effect">
+                                <i class="material-icons icon-blue">account_circle</i>
+                            </a>
                         </li>
-                    </ul>
-                    <!-- Menu para resposividade do sidebar -->
-                    <a href="#!" data-target="sidenav-left" class="sidenav-trigger left"><i class="material-icons black-text">menu</i></a>
+
+                        <!-- Dropdown navbar -->
+                        <ul id="dropdown-menu" class="dropdown-content">
+                            <li><a href="">Login</a></li>
+                            <li class="divider"></li>
+                        </ul>
+
+                        
                 </div>
             </nav>
         </div>
 
         <!-- Navbar lateral -->
-        <ul id="sidenav-left" class="sidenav sidenav-fixed blue darken-2 white-text ">
+        <ul id="mobile-navbar" class="sidenav sidenav-fixed blue darken-2 white-text ">
             <li>
                 <div class="logo-corrector">
                     <a href="{{ route('site.home') }}" class="logo-containerwhite"> <img class="logo-corrector" src="{{ asset('images/wink-branco.png') }}"> </a>
@@ -61,17 +73,20 @@
         </ul>
     </header>
 
-    <main>
+    <main class="container">
 
         @yield('content')
 
-    </main class="container">
+    </main>
 
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- JavaScript - Materialize) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Script do site -->
+    <script type="text/javascript" src="<?php echo asset('js/script.js') ?>"></script>
 </body>
 
 </html>
