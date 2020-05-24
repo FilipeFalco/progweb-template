@@ -8,8 +8,8 @@
     <title>QHelp - Login</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="<?php echo asset('css/reset.css')?>" type="text/css">
-    <link rel="stylesheet" href="<?php echo asset('css/style.css')?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo asset('css/reset.css') ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo asset('css/style.css') ?>" type="text/css">
 
     <!-- CSS - Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
+
 <body>
     <main>
         <div class="valign-wrapper" id="alinhamento-login">
