@@ -34,3 +34,22 @@ img.logo-corrector {
 img.image-corrector {
     max-width: 9%;
 }
+
+.center-align {
+    padding: 30px;
+}
+
+
+/* Pagina login */
+
+#correcao-padding {
+    padding-top: 20px;
+}
+
+.mudar-cor-input {
+    color: white;
+}
+
+.logo-login {
+    max-width: 50%;
+}
