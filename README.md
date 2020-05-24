@@ -36,7 +36,7 @@ Windows (opcional):
 <commandos>
 ```
 
-## Usando Nome_da_Aplicação
+## Usando QHelp
 
 Para usar Nome_da_Aplicação, siga os seguintes passos (exemplos):
 
