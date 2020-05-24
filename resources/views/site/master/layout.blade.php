@@ -16,7 +16,6 @@
 
     <!-- Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
 </head>
 
 <body class="has-fixed-sidenav vsc-initialized">
@@ -42,29 +41,21 @@
 
         <!-- Navbar lateral -->
         <ul id="sidenav-left" class="sidenav sidenav-fixed blue darken-2 white-text ">
-            <li >
+            <li>
                 <div class="logo-corrector">
                     <a href="{{ route('site.home') }}" class="logo-containerwhite"> <img class="logo-corrector" src="{{ asset('images/wink-branco.png') }}"> </a>
                 </div>
             </li>
-
+            <li>
+                <div class="divider"></div>
+            </li>
             <li class="no-padding">
-                <ul class="collapsible collapsible-accordion">
-                    <li class="bold waves-effect">
-                        <a class="collapsible-header"><i class="large material-icons">dashboard</i>Dashboard</a>
-                    </li>
-                    <li class="bold waves-effect">
-                        <a class="collapsible-header">Chat<i class="large material-icons">chat</i></a>
-                    </li>
-                    <li class="bold waves-effect">
-                        <a class="collapsible-header">Histórico<i class="large material-icons">label</i></a>
-                    </li>
-                    <li class="bold waves-effect">
-                        <a class="collapsible-header">Configurações<i class="large material-icons">settings</i></a>
-                    </li>
-                    <li class="bold waves-effect">
-                        <a class="collapsible-header">Informações<i class="large material-icons">info_outline</i></a>
-                    </li>
+                <ul class="collapsible">
+                    <li class="bold"><a href=""><i class="material-icons">dashboard</i>Dashboatd</a></li>
+                    <li class="bold"><a href=""><i class="material-icons">chat</i>Chat</a></li>
+                    <li class="bold"><a href=""><i class="material-icons">label</i>Histórico</a></li>
+                    <li class="bold"><a href=""><i class="material-icons">settings</i>Configurações</a></li>
+                    <li class="bold"><a href=""><i class="material-icons">info_outline</i>Informações</a></li>
                 </ul>
             </li>
         </ul>

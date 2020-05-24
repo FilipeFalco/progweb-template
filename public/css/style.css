@@ -2,10 +2,6 @@ i.icon-blue {
     color: #1976d2;
 }
 
-#espacamento-logo {
-    padding-bottom: 200px;
-}
-
 .logo-corrector {
     text-align: center;
 }
@@ -13,11 +9,6 @@ i.icon-blue {
 img.logo-corrector {
     padding-top: 10px;
     max-width: 20%;
-}
-
-#text-logo-color {
-    color: white;
-    font-size: 20px;
 }
 
 .alinhamento-vertical-cards {
