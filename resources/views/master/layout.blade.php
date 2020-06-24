@@ -52,7 +52,7 @@
         <ul id="mobile-navbar" class="sidenav sidenav-fixed blue darken-2 white-text ">
             <li>
                 <div class="logo-corrector">
-                    <a href="{{ route('site.home') }}" class="logo-containerwhite"> <img class="logo-corrector" src="{{ asset('images/wink-branco.png') }}"> </a>
+                    <a href="{{ route('home') }}" class="logo-containerwhite"> <img class="logo-corrector" src="{{ asset('images/wink-branco.png') }}"> </a>
                 </div>
             </li>
             <li>
