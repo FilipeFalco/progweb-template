@@ -22,6 +22,7 @@ Route::get('/login', function () {
     return view('login');
 })->name('login');
 
+Route::resource('customers', 'CustomersController');
 
 
 
