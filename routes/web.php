@@ -30,6 +30,10 @@ Route::get('/chat', function () {
     return view('chat-client');
 })->name('chat-client');
 
+Route::get('/user', function () {
+    return view('user');
+})->name('user');
+
 Route::resource('customers', 'CustomersController');
 
 
