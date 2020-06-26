@@ -18,11 +18,8 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/login', function () {
-    return view('login');
-})->name('login');
 
-Route::resource('customers', 'CustomersController');
+Route::resource('/login', 'UsuarioController@index');
 
 
 
