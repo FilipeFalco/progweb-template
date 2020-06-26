@@ -22,6 +22,10 @@ Route::get('/login', function () {
     return view('login');
 })->name('login');
 
+Route::get('/chat', function () {
+    return view('chat');
+})->name('chat');
+
 Route::resource('customers', 'CustomersController');
 
 
