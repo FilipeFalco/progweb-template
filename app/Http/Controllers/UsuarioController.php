@@ -3,9 +3,21 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\ModelUsuario;
+use App\User;
 
-class CustomersController extends Controller
+class UsuarioController extends Controller
 {
+
+    private $objUser;
+    private $objUsuario;
+
+    public function __construct()
+    {
+        $this->objUser=new User();
+        $this->objUsuario=new ModelUsuario();
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +25,8 @@ class CustomersController extends Controller
      */
     public function index()
     {
-
+        $usuario=$this->objUsuario->all();
+        return view('lista', compact('usuario'));
     }
 
     /**
@@ -23,7 +36,8 @@ class CustomersController extends Controller
      */
     public function create()
     {
-        //
+        $users=$this->objUser->all();
+        return view('create', compact('usesr'));
     }
 
     /**
@@ -45,7 +59,8 @@ class CustomersController extends Controller
      */
     public function show($id)
     {
-        //
+        $usuario=$this->objUsuario->find($id);
+        return view('show', compact('book'));
     }
 
     /**

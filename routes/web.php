@@ -34,7 +34,8 @@ Route::get('/user', function () {
     return view('user');
 })->name('user');
 
-Route::resource('customers', 'CustomersController');
+Route::get('/lista', 'UsuarioController@index');
+
 
 
 
