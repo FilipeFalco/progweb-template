@@ -15,8 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('menu');
-})->name('menu');
+    return view('auth/login');
+})->name('auth/login');
 
 
 Route::get('/chat-admin', function () {

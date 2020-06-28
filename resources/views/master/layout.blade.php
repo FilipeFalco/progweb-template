@@ -61,7 +61,7 @@
             <li class="no-padding">
                 <ul class="collapsible">
                     <li class="bold"><a href=""><i class="material-icons">dashboard</i>Dashboatd</a></li>
-                    <li class="bold"><a href=""><i class="material-icons">chat</i>Chat</a></li>
+                    <li class="bold"><a href="../chat-admin"><i class="material-icons">chat</i>Chat</a></li>
                     <li class="bold"><a href=""><i class="material-icons">label</i>Histórico</a></li>
                     <li class="bold"><a href=""><i class="material-icons">settings</i>Configurações</a></li>
                     <li class="bold"><a href=""><i class="material-icons">info_outline</i>Informações</a></li>
