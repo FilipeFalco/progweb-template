@@ -19,68 +19,60 @@
 
 </head>
 
-<body>
-    <main>
-        <div class="valign-wrapper" id="alinhamento-login">
-            <div class="valign" id="alinhamento-login2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s12 m6 offset-m3">
-                            <div class="card blue darken-2 ">
-                                <div class="card-content">
-                                    <span class="card-title blue darken-2 white-text">Preencha para logar</span>
-                                    <form method="POST" action="{{ route('login') }}">
-                                        @csrf
-                                        <div class="row">
-                                            <div class="input-field col s12">
-                                                <input placeholder="teste@dominio.com" id="login" type="text" class="validate white-text form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-                                                <label for="login" class="active">E-mail</label>
+<div class="container">
+    <div class="row">
+        <div class="col s12 m6 offset-m3">
+            <div class="card blue darken-2">
+                <div class="card-content">
+                    <span class="card-title blue darken-2 white-text">Preencha para logar</span>
+                    <form method="POST" action="{{ route('login') }}">
+                        @csrf
 
-                                                @error('email')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                                @enderror
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="input-field col s12">
-                                                <input placeholder="*****" id="password" type="password" class="validate white-text form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-                                                <label for="password" class="active">Senha</label>
+                        <div>
+                            <label for="email" class="col m4">{{ __('E-mail') }}</label>
 
-                                                @error('password')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                                @enderror
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="card-action">
-                                    <button type="submit" class="waves-effect waves-light btn">
-                                        {{ __('Login') }}
-                                    </button>
+                            <div>
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
-                                    @if (Route::has('password.request'))
-                                    <a class="" href="{{ route('password.request') }}">
-                                        {{ __('Esqueceu a senha?') }}
-                                    </a>
-                                    @endif
-                                </div>
+                                @error('email')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
                             </div>
                         </div>
-                    </div>
+
+                        <div>
+                            <label for="password" class="col m4">{{ __('Senha') }}</label>
+
+                            <div>
+                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+
+                                @error('password')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                    
+                        <div class="form-group row mb-0">
+                            <div class="col m8 offset m4">
+                                <button type="submit" class="btn btn-primary">
+                                    {{ __('Login') }}
+                                </button>
+
+                                @if (Route::has('password.request'))
+                                <a class="btn btn-link" href="{{ route('password.request') }}">
+                                    {{ __('Esqueceu a senha?') }}
+                                </a>
+                                @endif
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </main>
-
-    <!-- JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- JavaScript - Materialize) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</body>
-
-</html>
+    </div>
+</div>

@@ -45,7 +45,6 @@ Route::get('/cadastro', function () {
 
 Route::get('/lista', 'UsuarioController@index');
 
-
 Auth::routes();
 
 Route::get('/menu', 'HomeController@index')->name('menu');
