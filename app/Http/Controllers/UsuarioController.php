@@ -3,11 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-<<<<<<< HEAD
-
-class UsuarioController extends Controller
-{
-=======
 use App\Models\ModelUsuario;
 use App\User;
 
@@ -23,7 +18,6 @@ class UsuarioController extends Controller
         $this->objUsuario=new ModelUsuario();
     }
 
->>>>>>> master
     /**
      * Display a listing of the resource.
      *
@@ -31,12 +25,8 @@ class UsuarioController extends Controller
      */
     public function index()
     {
-<<<<<<< HEAD
-        return view('login');
-=======
         $usuario=$this->objUsuario->all();
         return view('lista', compact('usuario'));
->>>>>>> master
     }
 
     /**
@@ -46,12 +36,8 @@ class UsuarioController extends Controller
      */
     public function create()
     {
-<<<<<<< HEAD
-        //
-=======
         $users=$this->objUser->all();
         return view('create', compact('usesr'));
->>>>>>> master
     }
 
     /**
@@ -73,12 +59,8 @@ class UsuarioController extends Controller
      */
     public function show($id)
     {
-<<<<<<< HEAD
-        //
-=======
         $usuario=$this->objUsuario->find($id);
         return view('show', compact('book'));
->>>>>>> master
     }
 
     /**
