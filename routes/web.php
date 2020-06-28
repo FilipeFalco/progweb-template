@@ -35,8 +35,26 @@ Route::get('/create', function () {
     return view('create');
 })->name('create');
 
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
+
+Route::get('/cadastro', function () {
+    return view('cadastro');
+})->name('cadastro');
+
 Route::get('/lista', 'UsuarioController@index');
 
 
 
 
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

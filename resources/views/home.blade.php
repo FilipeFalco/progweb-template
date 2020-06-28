@@ -1,35 +1,23 @@
-@extends('master.layout')
+@extends('layouts.app')
 
 @section('content')
-<div class="row">
-    <div class="col s12 l10 offset-l2">
-        <a href="">
-            <div class="card responsive-img center-align">
-                <img class="image-corrector" src="{{ asset('images/target.png') }}">
-                <h5>Recursos Humanos</h5>
-                <p class="card-text-format">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, facere!</p>
-            </div>
-        </a>
-    </div>
-    <div class="col s12 l10 offset-l2">
-        <a href="">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
             <div class="card">
-                <div class="responsive-img center-align">
-                    <img class="image-corrector" src="{{ asset('images/technical.png') }}">
-                    <h5>Departamento de informatica</h5>
-                    <p class="card-text-format">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, atque!</p>
+                <div class="card-header">Dashboard</div>
+
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+
+                    You are logged in!
                 </div>
             </div>
-        </a>
+        </div>
     </div>
-    <div class="col s12 l10 offset-l2">
-        <a href="">
-            <div class="card responsive-img center-align">
-                <img class="image-corrector" src="{{ asset('images/payment-terminal.png') }}">
-                <h5>Requisições de mercado</h5>
-                <p class="card-text-format">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, commodi.</p>
-            </div>
-    </div>
-</div>
 </div>
 @endsection
