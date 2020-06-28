@@ -23,20 +23,17 @@ Antes de iniciar, certifique-se de cumprir os seguintes requisitos:
 ## Como executar
 
 Para fazer o deploy da aplicação siga os seguintes passos:
+OBS.: Os testes foram realizados apenas em ambiente Windows.
 
 Windows:
-`OBS.: Os testes foram realizados apenas em ambiente Windows.`
  1. Realizar o clone do repositório;
  2. Abrir o terminal dentro da pasta em questão do repositório;
  3. Executar o seguinte comando:
-    '''
-    composer install
-    '''
+    `composer install`   
  4. Em seguida, para iniciar a aplicação, executar o seguinte comando:
-    '''
-    php artisan serve
-    '''
-`OBS2.: Para  alteração das configurações do banco de dados, modificar no arquivo .env`
+    `php artisan serve`
+    
+OBS.: Para  alteração das configurações do banco de dados, modificar no arquivo .env
 
 ## Usando QHelp
 
