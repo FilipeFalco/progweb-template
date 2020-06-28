@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h1 class="text-center">@if(isset($usuario))EDITAR @else LISTA @endif</h1><hr>
+<h1 class="text-center">LISTA</h1><hr>
 
 
 <div class="text-center mt-3 mb-4">
@@ -46,7 +46,7 @@
                     <button class="btn btn-primary">Editar</button>
             </td>
             <td>
-                <a href="">
+            <a href="{{url("usuario/$usuarios->id")}}" class="js-del" >
                     <button class="btn btn-danger">Deletar</button>
             </td>
         </tr

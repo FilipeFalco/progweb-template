@@ -84,6 +84,8 @@
 
     <!-- Script do site -->
     <script type="text/javascript" src="<?php echo asset('js/script.js') ?>"></script>
+
+    <script src="{{url("assets/javascript.js")}}"></script>
 </body>
 
 </html>

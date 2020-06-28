@@ -95,7 +95,15 @@ class UsuarioController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->objUsuario->where(['id'=>$id])->update([
+            'name'=>$request->name,
+            'email'=>$request->email,
+            'endereco'=>$request->endereco,
+            'cargo'=>$request->cargo,
+            'id_user'=>$request->id_user
+        ]);
+
+        return redirect('lista');
     }
 
     /**
@@ -106,6 +114,7 @@ class UsuarioController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $del=$this->objUsuario->destroy($id);
+        return($del)?"sim":"não";
     }
 }
