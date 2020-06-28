@@ -19,7 +19,24 @@ Route::get('/', function () {
 })->name('home');
 
 
+<<<<<<< HEAD
 Route::resource('/login', 'UsuarioController@index');
+=======
+Route::get('/chat-admin', function () {
+    return view('chat-admin');
+})->name('chat-admin');
+
+Route::get('/chat', function () {
+    return view('chat-client');
+})->name('chat-client');
+
+Route::get('/user', function () {
+    return view('user');
+})->name('user');
+
+Route::get('/lista', 'UsuarioController@index');
+
+>>>>>>> master
 
 
 

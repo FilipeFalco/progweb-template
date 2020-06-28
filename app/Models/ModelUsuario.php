@@ -7,4 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 class ModelUsuario extends Model
 {
     protected $table='usuario';
+<<<<<<< HEAD
+=======
+
+    public function relUsers(){
+        return $this->hasOne('App\User','id','id_user');
+    }
+
+>>>>>>> master
 }
