@@ -35,7 +35,7 @@ Route::get('/create', function () {
     return view('create');
 })->name('create');
 
-Route::get('/login', function () {
+Route::get('/login2', function () {
     return view('login');
 })->name('login');
 

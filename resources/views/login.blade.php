@@ -29,23 +29,44 @@
                             <div class="card blue darken-2 ">
                                 <div class="card-content">
                                     <span class="card-title blue darken-2 white-text">Preencha para logar</span>
-                                    <form>
+                                    <form method="POST" action="{{ route('login') }}">
+                                        @csrf
                                         <div class="row">
                                             <div class="input-field col s12">
-                                                <input placeholder="teste" id="login" type="text" class="validate white-text">
-                                                <label for="login" class="active">Login</label>
+                                                <input placeholder="teste@dominio.com" id="login" type="text" class="validate white-text form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                                <label for="login" class="active">E-mail</label>
+
+                                                @error('email')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                                @enderror
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="input-field col s12">
-                                                <input placeholder="*****" id="password" type="password" class="validate white-text">
+                                                <input placeholder="*****" id="password" type="password" class="validate white-text form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
                                                 <label for="password" class="active">Senha</label>
+
+                                                @error('password')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                                @enderror
                                             </div>
                                         </div>
                                     </form>
                                 </div>
                                 <div class="card-action">
-                                    <input type="submit" class="btn" value="Entrar">
+                                    <button type="submit" class="waves-effect waves-light btn">
+                                        {{ __('Login') }}
+                                    </button>
+
+                                    @if (Route::has('password.request'))
+                                    <a class="" href="{{ route('password.request') }}">
+                                        {{ __('Esqueceu a senha?') }}
+                                    </a>
+                                    @endif
                                 </div>
                             </div>
                         </div>
