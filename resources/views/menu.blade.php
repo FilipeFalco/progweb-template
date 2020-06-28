@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layout.blade.php')
 
 @section('content')
 <div class="container">
@@ -21,3 +21,5 @@
     </div>
 </div>
 @endsection
+
+

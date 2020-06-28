@@ -15,8 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('home');
-})->name('home');
+    return view('menu');
+})->name('menu');
 
 
 Route::get('/chat-admin', function () {
@@ -46,15 +46,7 @@ Route::get('/cadastro', function () {
 Route::get('/lista', 'UsuarioController@index');
 
 
-
-
-
-
-
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/menu', 'HomeController@index')->name('menu');
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
