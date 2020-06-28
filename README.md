@@ -10,43 +10,47 @@ Acesso o [backlog](https://docs.google.com/spreadsheets/d/1Hta1WhosgH-4h9NC0ErxV
 
 Acesso ao [mockup](https://drive.google.com/open?id=11ibLOhiIx5Xgt8adgL6ctP-gD0vVf5Cw) do desenvolvimento
 
+Acesso a [documentação completa do software] (https://drive.google.com/drive/u/0/folders/1XP0m03bjFlkaNHFgxQfz1HNxYKVuOpmE)
+
 ## Pré-requisitos
 
 Antes de iniciar, certifique-se de cumprir os seguintes requisitos:
-<!--- Estes são alguns exemplos de requisitos. Adicione, duplique e remove como necessário --->
-* Você deve possuir a última versão do `<linguagem/dependencia/etc>` instalado.
-* Você deve possuir uma máquina `<Windows/Linux/Mac>`. (Deixe claro qual SO é possível rodar a aplicação, Linux é obrigatório).
-* Você deve ler o `<guia/link/documentação>` dos termos de uso.
-* (outros ...)
+* Você deve possuir o PHP 7.0 ou versão superior;
+* Você deve ter instalado o Composer;
+* Você deve ter instalado o Lavrel;
+* Você deve ter instalado um SGBD MySQL.
 
 ## Como executar
 
 Para fazer o deploy da aplicação siga os seguintes passos:
 
-Linux e/ou macOS:
-```
-<commando 1>
-<commando 2>
-....
-<commando n>
-```
+Windows:
+`OBS.: Os testes foram realizados apenas em ambiente Windows.`
+ 1. Realizar o clone do repositório;
+ 2. Abrir o terminal dentro da pasta em questão do repositório;
+ 3. Executar o seguinte comando:
+    '''
+    composer install
+    '''
+ 4. Em seguida, para iniciar a aplicação, executar o seguinte comando:
+    '''
+    php artisan serve
+    '''
+`OBS2.: Para  alteração das configurações do banco de dados, modificar no arquivo .env`
 
-Windows (opcional):
-```
-<commandos>
-```
+## Usando QHelp
 
-## Usando Nome_da_Aplicação
+Para usar QHelp, siga os seguintes passos (exemplos):
 
-Para usar Nome_da_Aplicação, siga os seguintes passos (exemplos):
+* Abra o navegador e digite o seguinte endereço: `http://127.0.0.1`
+* Ao abrir a aplicação você deverá, obrigatóriamente:
+  * Criar um usuário em "Registrar usuário";
+  * Informar Nome, e-mail e senha;
+  * Todas as informações para registro são obrigatórias;
+  * Conclua o cadastro e automayicamente você será logado na aplicação.
 
-* Abra o navegador e digite o seguinte endereço: `http://localhost/....`
-* Ao abrir a aplicação você poderá:
-  * Navegar pelo conteúdo público, ou
-  * Entrar com usuário e senha para ....
-* *Continua ...*  
-
-*Descreva as principais atividades, e/ou fluxos, que são possíveis de serem realizadas na aplicação.*
+* Dentro da home, basta clicar na classificação do problema identificado e o sistema
+sera direcionado para o início de um novo chat de conversa.
 
 ## Contribuidores
 
