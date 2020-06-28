@@ -37,7 +37,7 @@ class UsuarioController extends Controller
     public function create()
     {
         $users=$this->objUser->all();
-        return view('create', compact('usesr'));
+        return view('create', compact('users'));
     }
 
     /**
@@ -48,7 +48,17 @@ class UsuarioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $cad = $this->objUser->create([
+            'name'=>$request->name,
+            'email'=>$request->email,
+            'endereco'=>$request->endereco,
+            'cargo'=>$request->cargo,
+            'id_user'=>$request->id_user
+        ]);
+
+        if($cad){
+            return redirect('lista');
+        }
     }
 
     /**
@@ -60,7 +70,7 @@ class UsuarioController extends Controller
     public function show($id)
     {
         $usuario=$this->objUsuario->find($id);
-        return view('show', compact('book'));
+        return view('show', compact('usuario'));
     }
 
     /**
@@ -71,7 +81,9 @@ class UsuarioController extends Controller
      */
     public function edit($id)
     {
-        //
+        $usuario=$this->objUsuario->find($id);
+        $users=$this->objUser->all();
+        return view('create', compact('usuario', 'users'));
     }
 
     /**

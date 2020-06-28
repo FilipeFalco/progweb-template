@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h1 class="text-center">Cadastrar</h1><hr>
+<h1 class="text-center">@if(isset($usuario))EDITAR @else CADASTRAR @endif</h1><hr>
 
 <div class="col-8 m-auto">
     <form name="formCad" id="formCad" method="post" action="{{url('usuarios')}}">
@@ -17,7 +17,7 @@
         <input class="form-control" type="text" name="email" id="email" placeholder="Email">
         <input class="form-control" type="text" name="endereco" id="endereco" placeholder="Endereco">
         <input class="form-control" type="text" name="Cargo" id="cargo" placeholder="Cargo">
-        <input class="btn btn-primary submit" value="Cadastrar">
+        <input class="btn btn-primary submit" value="@if(isset($usuario))EDITAR @else CADASTRAR @endif">
 
     
     </form>

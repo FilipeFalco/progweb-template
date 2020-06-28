@@ -19,9 +19,6 @@ Route::get('/', function () {
 })->name('home');
 
 
-<<<<<<< HEAD
-Route::resource('/login', 'UsuarioController@index');
-=======
 Route::get('/chat-admin', function () {
     return view('chat-admin');
 })->name('chat-admin');
@@ -34,9 +31,12 @@ Route::get('/user', function () {
     return view('user');
 })->name('user');
 
+Route::get('/create', function () {
+    return view('create');
+})->name('create');
+
 Route::get('/lista', 'UsuarioController@index');
 
->>>>>>> master
 
 
 
