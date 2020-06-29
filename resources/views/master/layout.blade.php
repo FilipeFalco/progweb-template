@@ -37,15 +37,8 @@
                                 <i class="material-icons icon-blue">account_circle</i>
                             </a>
                         </li>
-
-
                 </div>
             </nav>
-            <!-- Dropdown navbar -->
-            <ul id="dropdown-menu" class="dropdown-content">
-                <li><a href="#">Login</a></li>
-                <li class="divider"></li>
-            </ul>
         </div>
 
         <!-- Navbar lateral -->
@@ -79,7 +72,7 @@
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- JavaScript - Materialize) -->
+    <!-- JavaScript - Materialize -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <!-- Script do site -->
